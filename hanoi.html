@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 <html lang="vi">
 
-
 <head>
     <meta charset="UTF-8">
-    <title>Hà Nội</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hà Nội - Khám phá Thủ đô</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>HÀ NỘI</h1>
+    <!-- Header / Banner chính -->
+    <header class="site-header">
+        <h1>🏛️ DU LỊCH HÀ NỘI</h1>
+        <p class="slogan">Thủ đô nghìn năm văn hiến với nét đẹp cổ kính và thanh bình</p>
+    </header>
 
-    <p>Hà Nội là thủ đô của Việt Nam.</p>
+    <!-- Menu điều hướng chính -->
+    <nav class="main-nav">
+        <a href="index.html">Trang chủ</a> |
+        <a href="hanoi.html" class="active">Hà Nội</a> |
+        <a href="danang.html">Đà Nẵng</a> |
+        <a href="https://www.google.com" target="_blank">Google</a>
+    </nav>
 
-    <h2>Các địa điểm nên tham quan</h2>
+    <!-- Nội dung chi tiết -->
+    <main class="container">
 
-    <ul>
-        <li>Hồ Hoàn Kiếm</li>
-        <li>Văn Miếu Quốc Tử Giám</li>
-        <li>Lăng Chủ tịch Hồ Chí Minh</li>
-        <li>Hồ Tây</li>
-    </ul>
+        <section>
+            <h2>Giới thiệu về Hà Nội</h2>
+            <p style="font-size: 1.1rem; color: var(--text-main); margin-bottom: 1.5rem;">
+                Hà Nội là thủ đô của Việt Nam, nổi tiếng với lịch sử hàng nghìn năm văn hiến, những con phố cổ rêu
+                phong, ẩm thực tinh tế và con người thanh lịch, mến khách.
+            </p>
 
-    <h2>Hình ảnh Hà Nội</h2>
+            <h2>Các địa điểm nên tham quan</h2>
+            <ul class="card-grid">
+                <li>🌸 Hồ Hoàn Kiếm</li>
+                <li>📖 Văn Miếu Quốc Tử Giám</li>
+                <li>⭐ Lăng Chủ tịch Hồ Chí Minh</li>
+                <li>🌅 Hồ Tây</li>
+            </ul>
+        </section>
 
-    <img src="images/hanoi.jpg"
-         alt="Hình ảnh Hà Nội"
-         width="300">
+        <section>
+            <h2>Hình ảnh Hà Nội</h2>
+            <div class="gallery-item" style="max-width: 650px; margin: 1rem 0;">
+                <img src="images/hanoi.jpg" alt="Hình ảnh Hà Nội" class="detail-hero-img"
+                    style="max-width: 100%; margin: 0;">
+                <div class="image-caption">Toàn cảnh vẻ đẹp Thăng Long - Hà Nội</div>
+            </div>
 
-    <br><br>
+            <div class="action-buttons">
+                <a href="index.html" class="btn btn-back">← Quay lại trang chủ</a>
+                <a href="danang.html" class="btn btn-primary">Khám phá Đà Nẵng →</a>
+            </div>
+        </section>
 
-    <a href="index.html">← Quay lại trang chủ</a>
+    </main>
+
+    <!-- Chân trang chung -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p><strong>Khám phá Việt Nam</strong> &copy; 2026. Chúc bạn có những chuyến du lịch trọn vẹn và ý nghĩa!</p>
+            <div class="footer-links">
+                <a href="index.html">Trang chủ</a>
+                <a href="hanoi.html">Hà Nội</a>
+                <a href="danang.html">Đà Nẵng</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>

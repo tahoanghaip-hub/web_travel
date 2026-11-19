@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="vi">
-
-
-
 <head>
     <meta charset="UTF-8">
-    <title>Đà Nẵng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đà Nẵng - Thành phố đáng sống</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1>ĐÀ NẴNG</h1>
+    <!-- Header / Banner chính -->
+    <header class="site-header">
+        <h1>🌉 DU LỊCH ĐÀ NẴNG</h1>
+        <p class="slogan">Thành phố biển năng động, hiện đại và đáng sống nhất Việt Nam</p>
+    </header>
 
-    <h2>Các địa điểm nên tham quan</h2>
+    <!-- Menu điều hướng chính -->
+    <nav class="main-nav">
+        <a href="index.html">Trang chủ</a> |
+        <a href="hanoi.html">Hà Nội</a> |
+        <a href="danang.html" class="active">Đà Nẵng</a> |
+        <a href="https://www.google.com" target="_blank">Google</a>
+    </nav>
 
-    <ol>
-        <li>Bà Nà Hills</li>
-        <li>Cầu Rồng</li>
-        <li>Biển Mỹ Khê</li>
-        <li>Ngũ Hành Sơn</li>
-    </ol>
+    <!-- Nội dung chi tiết -->
+    <main class="container">
 
-    <h2>Hình ảnh Đà Nẵng</h2>
+        <section>
+            <h2>Các địa điểm nên tham quan</h2>
+            <ol class="top-ranking">
+                <li>Bà Nà Hills</li>
+                <li>Cầu Rồng phun lửa & nước</li>
+                <li>Bãi biển Mỹ Khê</li>
+                <li>Danh thắng Ngũ Hành Sơn</li>
+            </ol>
+        </section>
 
-    <img src="images/danang.jpg"
-         alt="Hình ảnh Đà Nẵng"
-         width="300">
+        <section>
+            <h2>Hình ảnh Đà Nẵng</h2>
+            <div class="gallery-item" style="max-width: 650px; margin: 1rem 0;">
+                <img src="images/danang.jpg" alt="Hình ảnh Đà Nẵng" class="detail-hero-img" style="max-width: 100%; margin: 0;">
+                <div class="image-caption">Biểu tượng Cầu Rồng vươn mình ra biển lớn</div>
+            </div>
 
-    <br><br>
+            <div class="action-buttons">
+                <a href="index.html" class="btn btn-back">← Quay lại trang chủ</a>
+                <a href="https://danangfantasticity.com/" target="_blank" class="btn btn-primary">Tìm hiểu thêm về du lịch Đà Nẵng ↗</a>
+            </div>
+        </section>
 
-    <a href="https://danangfantasticity.com/"
-       target="_blank">
-        Tìm hiểu thêm về du lịch Đà Nẵng
-    </a>
+    </main>
 
-    <br><br>
-
-    <a href="index.html">← Quay lại trang chủ</a>
+    <!-- Chân trang chung -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p><strong>Khám phá Việt Nam</strong> &copy; 2026. Chúc bạn có những chuyến du lịch trọn vẹn và ý nghĩa!</p>
+            <div class="footer-links">
+                <a href="index.html">Trang chủ</a>
+                <a href="hanoi.html">Hà Nội</a>
+                <a href="danang.html">Đà Nẵng</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

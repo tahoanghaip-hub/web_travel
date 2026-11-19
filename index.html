@@ -1,149 +1,168 @@
 <!DOCTYPE html>
 <html lang="vi">
-
-
-
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khám phá Việt Nam</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1>KHÁM PHÁ VIỆT NAM</h1>
+    <!-- Header / Banner chính của website -->
+    <header class="site-header">
+        <h1>🇻🇳 KHÁM PHÁ VIỆT NAM</h1>
+        <p class="slogan">Hành trình khám phá vẻ đẹp bất tận từ Bắc chí Nam</p>
+    </header>
 
-    <!-- Menu chính -->
-    <nav>
-        <a href="index.html">Trang chủ</a> |
+    <!-- Menu điều hướng chính (Navigation Menu dạng Sticky) -->
+    <nav class="main-nav">
+        <a href="index.html" class="active">Trang chủ</a> |
         <a href="hanoi.html">Hà Nội</a> |
         <a href="danang.html">Đà Nẵng</a> |
         <a href="https://www.google.com" target="_blank">Google</a>
     </nav>
 
-    <hr>
+    <!-- Nội dung chính của trang -->
+    <main class="container">
 
-    <!-- Link đến vị trí trong cùng trang -->
-    <h2>Khám phá theo miền</h2>
+        <!-- Điều hướng nhanh theo miền -->
+        <section>
+            <h2>Khám phá theo miền</h2>
+            <div class="region-nav">
+                <a href="#mien-bac">🏔️ Miền Bắc</a> |
+                <a href="#mien-trung">🏖️ Miền Trung</a> |
+                <a href="#mien-nam">🌴 Miền Nam</a>
+            </div>
+        </section>
 
-    <a href="#mien-bac">Miền Bắc</a> |
-    <a href="#mien-trung">Miền Trung</a> |
-    <a href="#mien-nam">Miền Nam</a>
-
-    <hr>
-
-    <!-- Danh sách không thứ tự -->
-    <h2>Các địa điểm du lịch nổi tiếng</h2>
-
-    <ul>
-        <li>
-            <a href="hanoi.html">Hà Nội</a>
-        </li>
-        <li>
-            <a href="danang.html">Đà Nẵng</a>
-        </li>
-        <li>Hạ Long</li>
-        <li>Hội An</li>
-        <li>Đà Lạt</li>
-    </ul>
-
-    <!-- Danh sách có thứ tự -->
-    <h2>Top 5 địa điểm bạn muốn đến</h2>
-
-    <ol>
-        <li>Hà Nội</li>
-        <li>Đà Nẵng</li>
-        <li>Hội An</li>
-        <li>Hạ Long</li>
-        <li>Đà Lạt</li>
-    </ol>
-
-    <!-- Danh sách lồng nhau -->
-    <h2>Địa điểm du lịch theo miền</h2>
-
-    <ul>
-        <li id="mien-bac">
-            Miền Bắc
-            <ul>
-                <li>Hà Nội</li>
-                <li>Hạ Long</li>
-                <li>Sa Pa</li>
+        <!-- Danh sách không thứ tự: Các địa điểm du lịch nổi tiếng -->
+        <section>
+            <h2>Các địa điểm du lịch nổi tiếng</h2>
+            <ul class="card-grid">
+                <li>
+                    <a href="hanoi.html">🏛️ Hà Nội</a>
+                </li>
+                <li>
+                    <a href="danang.html">🌉 Đà Nẵng</a>
+                </li>
+                <li>⛵ Hạ Long</li>
+                <li>🏮 Hội An</li>
+                <li>🌸 Đà Lạt</li>
             </ul>
-        </li>
+        </section>
 
-        <li id="mien-trung">
-            Miền Trung
-            <ul>
+        <!-- Danh sách có thứ tự: Top 5 địa điểm bạn muốn đến -->
+        <section>
+            <h2>Top 5 địa điểm bạn muốn đến</h2>
+            <ol class="top-ranking">
+                <li>Hà Nội</li>
                 <li>Đà Nẵng</li>
                 <li>Hội An</li>
-                <li>Huế</li>
+                <li>Hạ Long</li>
+                <li>Đà Lạt</li>
+            </ol>
+        </section>
+
+        <!-- Danh sách lồng nhau: Địa điểm du lịch theo miền -->
+        <section class="regions-section">
+            <h2>Địa điểm du lịch theo miền</h2>
+            <ul class="nested-regions">
+                <li id="mien-bac">
+                    Miền Bắc
+                    <ul>
+                        <li>Hà Nội</li>
+                        <li>Hạ Long</li>
+                        <li>Sa Pa</li>
+                    </ul>
+                </li>
+
+                <li id="mien-trung">
+                    Miền Trung
+                    <ul>
+                        <li>Đà Nẵng</li>
+                        <li>Hội An</li>
+                        <li>Huế</li>
+                    </ul>
+                </li>
+
+                <li id="mien-nam">
+                    Miền Nam
+                    <ul>
+                        <li>TP. Hồ Chí Minh</li>
+                        <li>Vũng Tàu</li>
+                        <li>Phú Quốc</li>
+                    </ul>
+                </li>
             </ul>
-        </li>
+        </section>
 
-        <li id="mien-nam">
-            Miền Nam
-            <ul>
-                <li>TP. Hồ Chí Minh</li>
-                <li>Vũng Tàu</li>
-                <li>Phú Quốc</li>
-            </ul>
-        </li>
-    </ul>
+        <!-- Hình ảnh các địa điểm -->
+        <section>
+            <h2>Hình ảnh các địa điểm</h2>
+            <div class="image-showcase">
+                <!-- Ảnh Hà Nội đồng thời là link -->
+                <a href="hanoi.html" class="gallery-item" title="Xem thông tin Hà Nội">
+                    <img src="images/hanoi.jpg" alt="Hình ảnh Hà Nội" width="300">
+                    <div class="image-caption">Hà Nội nghìn năm văn hiến</div>
+                </a>
 
-    <!-- Hình ảnh -->
-    <h2>Hình ảnh các địa điểm</h2>
+                <div class="gallery-item">
+                    <img src="images/danang.jpg" alt="Hình ảnh Đà Nẵng" width="300">
+                    <div class="image-caption">Đà Nẵng - Thành phố đáng sống</div>
+                </div>
 
-    <!-- Ảnh Hà Nội đồng thời là link -->
-    <a href="hanoi.html">
-        <img src="images/hanoi.jpg"
-             alt="Hình ảnh Hà Nội"
-             width="300">
-    </a>
+                <div class="gallery-item">
+                    <img src="images/halong.jpg" alt="Hình ảnh Hạ Long" width="300">
+                    <div class="image-caption">Vịnh Hạ Long - Kỳ quan thiên nhiên</div>
+                </div>
 
-    <br><br>
+                <div class="gallery-item">
+                    <img src="images/hoian.jpg" alt="Hình ảnh Hội An" width="300">
+                    <div class="image-caption">Phố cổ Hội An lung linh</div>
+                </div>
+            </div>
+        </section>
 
-    <img src="images/danang.jpg"
-         alt="Hình ảnh Đà Nẵng"
-         width="300">
+        <!-- Thư viện hình ảnh -->
+        <section>
+            <h2>Thư viện hình ảnh</h2>
+            <div class="gallery-grid">
+                <a href="images/hanoi.jpg" target="_blank" title="Mở ảnh lớn Hà Nội">
+                    <img src="images/hanoi.jpg" alt="Hà Nội" width="250">
+                    <div class="image-caption">Thủ đô Hà Nội ↗</div>
+                </a>
 
-    <br><br>
+                <a href="images/danang.jpg" target="_blank" title="Mở ảnh lớn Đà Nẵng">
+                    <img src="images/danang.jpg" alt="Đà Nẵng" width="250">
+                    <div class="image-caption">Cầu Rồng Đà Nẵng ↗</div>
+                </a>
 
-    <img src="images/halong.jpg"
-         alt="Hình ảnh Hạ Long"
-         width="300">
+                <a href="images/halong.jpg" target="_blank" title="Mở ảnh lớn Hạ Long">
+                    <img src="images/halong.jpg" alt="Hạ Long" width="250">
+                    <div class="image-caption">Vịnh Hạ Long ↗</div>
+                </a>
 
-    <br><br>
+                <a href="images/hoian.jpg" target="_blank" title="Mở ảnh lớn Hội An">
+                    <img src="images/hoian.jpg" alt="Hội An" width="250">
+                    <div class="image-caption">Hội An cổ kính ↗</div>
+                </a>
+            </div>
+        </section>
 
-    <img src="images/hoian.jpg"
-         alt="Hình ảnh Hội An"
-         width="300">
+    </main>
 
-    <!-- Thư viện hình ảnh -->
-    <h2>Thư viện hình ảnh</h2>
-
-    <a href="images/hanoi.jpg" target="_blank">
-        <img src="images/hanoi.jpg"
-             alt="Hà Nội"
-             width="250">
-    </a>
-
-    <a href="images/danang.jpg" target="_blank">
-        <img src="images/danang.jpg"
-             alt="Đà Nẵng"
-             width="250">
-    </a>
-
-    <a href="images/halong.jpg" target="_blank">
-        <img src="images/halong.jpg"
-             alt="Hạ Long"
-             width="250">
-    </a>
-
-    <a href="images/hoian.jpg" target="_blank">
-        <img src="images/hoian.jpg"
-             alt="Hội An"
-             width="250">
-    </a>
+    <!-- Chân trang chung -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p><strong>Khám phá Việt Nam</strong> &copy; 2026. Chúc bạn có những chuyến du lịch trọn vẹn và ý nghĩa!</p>
+            <div class="footer-links">
+                <a href="index.html">Trang chủ</a>
+                <a href="hanoi.html">Hà Nội</a>
+                <a href="danang.html">Đà Nẵng</a>
+                <a href="#mien-bac">Lên đầu trang ↑</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
